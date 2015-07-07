@@ -17,10 +17,22 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.title = @"Score Keeper";
+    
+    _scrollView = [UIScrollView new];
+    _scrollView.frame = self.view.frame;
+    _scrollView.contentSize = CGSizeMake(self.view.frame.size.width, self.view.frame.size.height);
+    [self.view addSubview:_scrollView];
+    
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
+    
+}
+
+- (void)addScoreView:(int)i
+{
     
 }
 

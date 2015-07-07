@@ -10,4 +10,8 @@
 
 @interface ScoreViewController : UIViewController
 
+@property (nonatomic) UIScrollView *scrollView;
+
+- (void)addScoreView:(int)i;
+
 @end
