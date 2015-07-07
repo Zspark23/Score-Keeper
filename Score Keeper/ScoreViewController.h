@@ -13,8 +13,13 @@
 @property (nonatomic) UIScrollView *scrollView;
 @property (nonatomic) NSMutableArray *scoreLabels;
 @property (nonatomic) NSMutableArray *viewArray;
+@property (nonatomic) NSMutableArray *buttonArray;
+@property (nonatomic) UIButton *addScore;
+@property (nonatomic) UIButton *removeScore;
+@property (nonatomic) NSInteger tagNum;
 
 - (void)addScoreView:(int)i;
 - (void)removeLastScore;
+- (void)updateButtonView;
 
 @end
