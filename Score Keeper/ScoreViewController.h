@@ -11,7 +11,10 @@
 @interface ScoreViewController : UIViewController
 
 @property (nonatomic) UIScrollView *scrollView;
+@property (nonatomic) NSMutableArray *scoreLabels;
+@property (nonatomic) NSMutableArray *viewArray;
 
 - (void)addScoreView:(int)i;
+- (void)removeLastScore;
 
 @end
